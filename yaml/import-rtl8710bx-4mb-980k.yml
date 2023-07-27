@@ -1,0 +1,19 @@
+esphome:
+  name: kickstart-rtl8710bx-4mb-980k
+
+rtl87xx:
+  board: generic-rtl8710bx-4mb-980k
+  framework:
+    version: dev
+
+logger:
+web_server:
+captive_portal:
+mdns:
+api:
+ota:
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
